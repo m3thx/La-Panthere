@@ -3,6 +3,7 @@
 html { 
     font-size: 16px!important;
 }
+
 p {
     font-size: 1.1rem;
 }
@@ -58,14 +59,18 @@ a:hover {
     cursor: pointer;
 }
 
+ul, li {
+    text-decoration: none!important;
+    list-style-type: none;
+}
+
 /* Variables */
 html {
     --tangerine-color: #F3976C;
-    --test-color: #72468A;
 }
 
 
-/* start adding class 30.12.2022 */
+/* Added class */
 
 .top-border-tangerine{
     border-top: 3px solid var(--tangerine-color);
@@ -77,7 +82,55 @@ html {
     padding-bottom: 10px;
 }
 
-/* end adding class 30.12.2022 */
+.tc-black {
+    color: #000000!important;
+}
+
+.black {
+    color: #000000!important;
+}
+
+.list-footer {
+    color: #000000;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 0;
+    padding-inline: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    color: #000000!important;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+/* Added class */
+
+/* Overwrite class */
+
+.icon-md {
+    color: rgb(170 26 26 / 60%)!important;
+}
+
+#bloc-4-portfolio {
+    margin-block: auto;
+}
+
+.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Overwrite class */
+
 
 #page-loading-blocs-notifaction {
     position: fixed;
@@ -744,6 +797,8 @@ a[data-lightbox]:hover img {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .med-width-whitespace {
@@ -775,7 +830,7 @@ a[data-lightbox]:hover img {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(73, 60, 25, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -797,21 +852,22 @@ a[data-lightbox]:hover img {
 }
 
 .tc-white {
-    color: white!important;
+    color: #FFFFFF!important;
 }
+
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white:hover {
@@ -907,7 +963,7 @@ a[data-lightbox]:hover img {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1044,6 +1100,15 @@ a[data-lightbox]:hover img {
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+    .list-footer {
+        flex-direction: column;
+    }
+    a[data-lightbox] {
+        width: 400px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1053,8 +1118,14 @@ a[data-lightbox]:hover img {
     }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+@media (min-width: 1024px) {
+    html { 
+        font-size: 18px!important;
+    }
+    .tight-width-whitespace {
+        max-width: 100%;
+    }
+    .bloc {
+        padding: 0;
     }
 }

@@ -143,6 +143,9 @@ html {
     border-bottom: #F3976C 1px solid;
 }
 
+#nav-toggle {
+    visibility: hidden;
+}
 /* Added class */
 
 /* Overwrite class */
@@ -1142,6 +1145,9 @@ a[data-lightbox]:hover img {
     }
     a[data-lightbox] {
         width: 400px;
+    }
+    #nav-toggle {
+        visibility: visible;
     }
 }
 

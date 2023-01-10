@@ -52,6 +52,15 @@ button,html input[type=button],input[type=reset],input[type=submit] {
     cursor: pointer
 }
 
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+td,th {
+    padding: 0
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -221,6 +230,10 @@ ol,ul {
     .col-md-offset-2 {
         margin-left: 16.66666667%
     }
+}
+
+table {
+    background-color: transparent
 }
 
 .btn {
